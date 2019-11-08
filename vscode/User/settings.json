@@ -1,0 +1,119 @@
+{
+    "files.autoSave": "onWindowChange",
+    "workbench.colorTheme": "SynthWave '84",
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "none",
+    "explorer.openEditors.visible": 0,
+    "workbench.tree.indent": 20,
+    "workbench.iconTheme": "vscode-icons",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vs-kubernetes": {
+        "vs-kubernetes.minikube-path": "/Users/th/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    },
+    "sync.autoDownload": true,
+    "sync.autoUpload": true,
+    "sync.gist": "18090a7601fd559ab12ad3f00dfc450b",
+    "sync.forceUpload": true,
+    "editor.hover.delay": 150,
+    "editor.wordWrapColumn": 120,
+    "editor.fontFamily": "Dank Mono",
+    "editor.fontLigatures": true,
+    "editor.quickSuggestionsDelay": 5,
+    "azureFunctions.projectLanguage": "C#",
+    "vsicons.dontShowNewVersionMessage": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.tree.renderIndentGuides": "always",
+    "sync.quietSync": true,
+    "editor.fontSize": 22,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "[yaml]": {
+        "editor.defaultFormatter": "redhat.vscode-yaml",
+        "editor.tabSize": 2
+    },
+    "explorer.confirmDragAndDrop": false,
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-vscode.csharp"
+    },
+    "explorer.confirmDelete": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontSize": 20,
+    "terraform.languageServer": {
+        "enabled": false,
+        "args": []
+    },
+    "terraform.codelens.enabled": true,
+    "editor.codeLens": true,
+    "terraform.indexing": {
+        "enabled": true,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/*≤*/*",
+            "**/.terraform/**/*"
+        ]
+    },
+    "editor.formatOnSave": true,
+    "zenMode.hideLineNumbers": false,
+    "workbench.settings.useSplitJSON": true,
+    "workbench.settings.editor": "json",
+    "peacock.affectTabActiveBorder": false,
+    "peacock.affectAccentBorders": false,
+    "peacock.affectTitleBar": false,
+    "peacock.affectActivityBar": true,
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#b52e31"
+        },
+        {
+            "name": "Auth0 Orange",
+            "value": "#eb5424"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "C# Purple",
+            "value": "#68217A"
+        },
+        {
+            "name": "Terraform Purple",
+            "value": "#639"
+        },
+        {
+            "name": "Go Cyan",
+            "value": "#5dc9e2"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+    ],
+    "git.autofetch": true
+}

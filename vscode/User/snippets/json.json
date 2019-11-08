@@ -1,0 +1,72 @@
+{
+    "Azure Serach Index Suggestor": {
+        "prefix": "azsearch-suggestor",
+        "description": "Azure-Search suggestor",
+        "body": [
+            "{",
+            "\"name\": \"$1\",",
+            "\"searchMode\": \"analyzingInfixMatching\",",
+            "\"sourceFields\": [\"${3:fieldName}\", \"${4:otherFieldName}\"],",
+            "}"
+        ]
+    },
+    "Azure Search Index Field (minimal)": {
+        "prefix": "azsearch-min-field",
+        "description": "Adds a minimal field definition to Azure Search Index",
+        "body": [
+            "{",
+            "\t\"name\": \"${1:name}\",",
+            "\t\"type\": \"${2:type}\",",
+            "\t\"searchable\": true,",
+            "\t\"filterable\": true,",
+            "\t\"sortable\": true,",
+            "\t\"facetable\": true,",
+            "\t\"key\": true,",
+            "\t\"retrievable\": true,",
+            "\t\"analyzer\": \"${3:analyzer}\"",
+            "}"
+        ]
+    },
+    "Azure Search Index (minimal)": {
+        "prefix": "azsearch-min-index",
+        "description": "A minimal Azure-Search index",
+        "body": [
+            "{",
+            "\t\"name\": \"${1:indexName}\",",
+            "\t\"fields\": [],",
+            "\t\"suggesters\": [],",
+            "\t\"scoringProfiles\": []",
+            "}"
+        ]
+    },
+    "Azure Search Index": {
+        "prefix": "azsearch-index",
+        "description": "A full Azure-Search index",
+        "body": [
+            "{",
+            "\t\"name\": \"${1:indexName}\",",
+            "\t\"fields\": [],",
+            "\t\"suggesters\": [],",
+            "\t\"scoringProfiles\": [],",
+            "\t\"analyzers\": [],",
+            "\t\"charFilters\": [],",
+            "\t\"tokenizers\": [],",
+            "\t\"tokenFilters\": [],",
+            "\t\"defaultScoringProfile\": \"\",",
+            "\t\"corsOptions\": {",
+            "\t\t\"allowedOrigins\": [],",
+            "\t\t\"maxAgeInSeconds\": 60",
+            "\t},",
+            "\t\"encryptionKey\": {",
+            "\t\t\"keyVaultUri\": \"\",",
+            "\t\t\"keyVaultKeyName\": \"\",",
+            "\t\t\"keyVaultKeyVersion\": \"\",",
+            "\t\t\"accessCredentials\": {",
+            "\t\t\t\"applicationId\": \"\",",
+            "\t\t\t\"applicationSecret\": \"\"",
+            "\t}",
+            "}",
+            "}"
+        ]
+    }
+}
