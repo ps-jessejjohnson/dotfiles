@@ -1,78 +1,59 @@
 {
-    "files.autoSave": "onWindowChange",
-    "workbench.colorTheme": "SynthWave '84",
-    "window.zoomLevel": 0,
-    "workbench.startupEditor": "none",
-    "explorer.openEditors.visible": 0,
-    "workbench.tree.indent": 20,
-    "workbench.iconTheme": "vscode-icons",
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "vs-kubernetes": {
-        "vs-kubernetes.minikube-path": "/Users/th/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
-    "sync.autoDownload": true,
-    "sync.autoUpload": true,
-    "sync.gist": "18090a7601fd559ab12ad3f00dfc450b",
-    "sync.forceUpload": true,
-    "editor.hover.delay": 150,
-    "editor.wordWrapColumn": 120,
+    "editor.codeLens": true,
     "editor.fontFamily": "Dank Mono",
     "editor.fontLigatures": true,
+    "editor.fontSize": 15,
+    "editor.formatOnSave": true,
+    "editor.hover.delay": 150,
     "editor.quickSuggestionsDelay": 5,
-    "azureFunctions.projectLanguage": "C#",
-    "vsicons.dontShowNewVersionMessage": true,
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "editor.wordWrapColumn": 120,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.openEditors.visible": 0,
+    "files.autoSave": "onWindowChange",
+    "terminal.external.linuxExec": "gnome-terminal",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontFamily": "DankMono Nerd Font",
+    "terminal.integrated.fontSize": 20,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "SynthWave '84",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true,
+    "workbench.startupEditor": "none",
+    "workbench.tree.indent": 20,
     "workbench.tree.renderIndentGuides": "always",
-    "sync.quietSync": true,
-    "editor.fontSize": 22,
-    "[json]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    "zenMode.hideLineNumbers": false,
+    "azureFunctions.projectLanguage": "C#",
+    "git.autofetch": true,
     "javascript.preferences.quoteStyle": "single",
     "typescript.preferences.quoteStyle": "single",
-    "prettier.singleQuote": true,
-    "prettier.tabWidth": 4,
+    "vsicons.dontShowNewVersionMessage": true,
     "[yaml]": {
         "editor.defaultFormatter": "redhat.vscode-yaml",
         "editor.tabSize": 2
     },
-    "explorer.confirmDragAndDrop": false,
     "[csharp]": {
         "editor.defaultFormatter": "ms-vscode.csharp"
     },
-    "explorer.confirmDelete": false,
-    "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontSize": 20,
     "terraform.languageServer": {
         "enabled": false,
         "args": []
     },
     "terraform.codelens.enabled": true,
-    "editor.codeLens": true,
     "terraform.indexing": {
+        "delay": 500,
         "enabled": true,
         "liveIndexing": false,
-        "delay": 500,
         "exclude": [
             ".terraform/*≤*/*",
             "**/.terraform/**/*"
         ]
     },
-    "editor.formatOnSave": true,
-    "zenMode.hideLineNumbers": false,
-    "workbench.settings.useSplitJSON": true,
-    "workbench.settings.editor": "json",
-    "peacock.affectTabActiveBorder": false,
     "peacock.affectAccentBorders": false,
-    "peacock.affectTitleBar": false,
     "peacock.affectActivityBar": true,
+    "peacock.affectTabActiveBorder": false,
+    "peacock.affectTitleBar": false,
     "peacock.favoriteColors": [
         {
             "name": "Angular Red",
@@ -115,5 +96,4 @@
             "value": "#832561"
         },
     ],
-    "git.autofetch": true
 }

@@ -98,28 +98,34 @@ else
 fi
 
 codefolder_location=""
-
 codefolder_name=""
+
 if [[ ${codeexec} == 'code' ]]
 then
-    codeexec="code"
     codefolder_name="Code"
 else
     codeexec="code-insiders"
-    codefolder_name="Code\ -\ Insiders"
+    codefolder_name="Code - Insiders"
 fi
 if [[ $OSTYPE == darwin* ]]
 then
-    codefolder_location="${HOME}/Library/Application\ Support"
+    codefolder_location="${HOME}/Library/Application Support"
 else
     codefolder_location="${HOME}/.config"
 fi
 mkdir -p "${codefolder_location}/${codefolder_name}"
-if [[ -d "${codefolder_location}/${codefolder_name}/User" ]]
+
+userfolder="${codefolder_location}/${codefolder_name}/User"
+
+if [[ -d "${userfolder}" ]]
 then
-    rm -rf "${codefolder_location}/${codefolder_name}/User"
+    echo "user folder exists, will remove it"
+
+    rm -rf "${userfolder}"
 fi
-ln -sfv "${cwd}/vscode/User" "${codefolder_location}/${codefolder_name}/User" > /dev/null
+cd "${codefolder_location}/${codefolder_name}"
+ln -sfv "${cwd}/vscode/User" User > /dev/null
+cd "${cwd}"
 
 if [[ ${silent_mode} == 0 ]]
 then
@@ -133,8 +139,8 @@ else
 fi
 if [[ ${install_code_extensions} == 'y' ]]
 then
-    echo -e '\033[34mInstalling Extensions ...\033[0m'
-    cat ./vscode/.extensions | xargs -I {} ${codeexec} --install-extension {} > /dev/null
+    echo -e "\033[34mInstalling Extensions ...\033[0m"
+    cat "${cwd}/vscode/.extensions" | xargs -I {} ${codeexec} --install-extension {}
 fi
 echo -e "\033[92mVSCode configured\033[0m"
 echo ""
