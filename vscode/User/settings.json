@@ -14,7 +14,7 @@
     "terminal.external.linuxExec": "gnome-terminal",
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontFamily": "DankMono Nerd Font",
-    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.fontSize": 15,
     "window.zoomLevel": 0,
     "workbench.colorTheme": "SynthWave '84",
     "workbench.iconTheme": "vscode-icons",
