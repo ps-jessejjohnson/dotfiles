@@ -44,9 +44,9 @@ echo ""
 # link zsh stuff
 echo -e '\033[35mConfiguring ZSH\033[0m'
 echo "cloning plugins (auto-suggestions and syntax-highlighting)..."
-git clone git@github.com:zsh-users/zsh-autosuggestions.git zsh/plugins/zsh-autosuggestions > /dev/null
-git clone git@github.com:zsh-users/zsh-syntax-highlighting.git zsh/plugins/zsh-syntax-highlighting > /dev/null
-git clone git@github.com:bhilburn/powerlevel9k.git zsh/themes/powerlevel9k > /dev/null
+git clone https://github.com/zsh-users/zsh-autosuggestions.git zsh/plugins/zsh-autosuggestions > /dev/null
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git zsh/plugins/zsh-syntax-highlighting > /dev/null
+git clone https://github.com/bhilburn/powerlevel9k.git zsh/themes/powerlevel9k > /dev/null
 
 echo "linking zsh stuff"
 ln -sfv "${cwd}/zsh/themes/powerlevel9k" "${HOME}/.oh-my-zsh/custom/themes/powerlevel9k" > /dev/null
@@ -89,6 +89,7 @@ echo ""
 echo -e '\033[35mLinking VSCode / VSCode Insiders stuff\033[0m'
 echo ''
 echo 'Are you using VSCode or VSCode Insiders? (code for VSCode / insiders for VSCode Insiders)'
+
 if [[ ${silent_mode} == 0 ]]
 then
     read -p 'code or insiders: ' codeexec
@@ -97,7 +98,7 @@ else
 fi
 
 codefolder_location=""
-codeexec=""
+
 codefolder_name=""
 if [[ ${codeexec} == 'code' ]]
 then
