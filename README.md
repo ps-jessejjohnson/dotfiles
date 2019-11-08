@@ -21,6 +21,10 @@ This repository contains my dotfiles for
   - supports both Visual Studio Code and Visual Studio Code Insiders
   - Installs a set of extensions I use (see [.extensions](./vscode/.extensions))
 
+## Font
+
+I use [Dank Mono](https://dank.sh/) for both, Terminal and VSCode. On top I've patched the font in order to work seamlessly with Powerlevel9k using the font-patcher from [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
+
 ## Requirements
 
 If you're running macOS, you should checkout my [macOS setup repo](https://github.com/ThorstenHans/msetup). However, this script works for both macOS and linux.
@@ -56,3 +60,19 @@ I decided to clone repos for plugins (auto-suggestions and syntax-highlighting) 
 ./update_zsh_plugins_and_theme.sh
 
 ```
+
+## Screenshots
+
+Here some screenshots.
+
+### macOS
+
+![Terminal](images/mac-terminal.png)
+
+![VSCode Insiders](images/mac-vscode-insiders.png)
+
+### Ubuntu
+
+![Terminal](images/ubuntu-terminal.png)
+
+![VSCode](images/unbuntu-vscode.png)
