@@ -8,8 +8,8 @@ echo ""
 default_gitusername="Thorsten Hans"
 default_gitemail="thorsten.hans@gmail.com"
 default_codeexec="insiders"
-default_configure_iterm="y"
-default_install_code_extensions="y"
+default_configure_iterm="n"
+default_install_code_extensions="n"
 # END VARIABLES
 
 silent_mode=0

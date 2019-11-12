@@ -52,6 +52,8 @@ The [install script](./install.sh) can be executed without user interaction by p
 
 ```
 
+Silen Installation will not configure iTerm and will not install VSCode (Insiders) Extensions.
+
 ## Updating ZSH Plugins and Theme
 
 I decided to clone repos for plugins (auto-suggestions and syntax-highlighting) and theme (powerlevel9k) explicitly. You can hook up the [update script](./update_zsh_plugins_and_theme.sh) into your `.zshrc` or invoke it manually to ensure using latest versions.
