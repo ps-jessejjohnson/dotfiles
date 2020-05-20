@@ -24,6 +24,7 @@
     ui = auto
 [core]
 	editor = code --wait
+	autocrlf = false
 [pager]
 	branch = false
 [user]

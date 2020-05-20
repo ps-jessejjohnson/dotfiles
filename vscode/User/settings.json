@@ -1,99 +1,62 @@
 {
+    "update.mode": "start",
+    "files.autoSave": "onFocusChange",
+    "workbench.colorTheme": "LaserWave",
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "none",
+    "explorer.openEditors.visible": 0,
+    "workbench.tree.indent": 20,
+    "workbench.iconTheme": "vscode-icons",
     "editor.codeLens": true,
+    "editor.hover.delay": 40,
+    "editor.wordWrapColumn": 120,
     "editor.fontFamily": "Dank Mono",
     "editor.fontLigatures": true,
     "editor.fontSize": 15,
     "editor.formatOnSave": true,
-    "editor.hover.delay": 150,
+    "editor.insertSpaces": true,
     "editor.quickSuggestionsDelay": 5,
-    "editor.wordWrapColumn": 120,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.openEditors.visible": 0,
-    "files.autoSave": "onWindowChange",
-    "terminal.external.linuxExec": "gnome-terminal",
-    "terminal.external.osxExec": "iTerm.app",
-    "terminal.integrated.fontFamily": "DankMono Nerd Font",
-    "terminal.integrated.fontSize": 15,
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "SynthWave '84",
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.settings.editor": "json",
-    "workbench.settings.useSplitJSON": true,
-    "workbench.startupEditor": "none",
-    "workbench.tree.indent": 20,
-    "workbench.tree.renderIndentGuides": "always",
-    "zenMode.hideLineNumbers": false,
     "azureFunctions.projectLanguage": "C#",
-    "git.autofetch": true,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.activityBar.visible": true,
     "javascript.preferences.quoteStyle": "single",
-    "typescript.preferences.quoteStyle": "single",
-    "vsicons.dontShowNewVersionMessage": true,
-    "[yaml]": {
-        "editor.defaultFormatter": "redhat.vscode-yaml",
-        "editor.tabSize": 2
-    },
-    "[csharp]": {
-        "editor.defaultFormatter": "ms-vscode.csharp"
-    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "Dank Mono",
+    "terminal.integrated.lineHeight": 1.1,
+    "terminal.integrated.rightClickBehavior": "paste",
     "terraform.languageServer": {
-        "enabled": false,
+        "enabled": true,
         "args": []
     },
-    "terraform.codelens.enabled": true,
+    "terraform.codelens.enabled": false,
     "terraform.indexing": {
-        "delay": 500,
-        "enabled": true,
+        "enabled": false,
         "liveIndexing": false,
+        "delay": 500,
         "exclude": [
-            ".terraform/*≤*/*",
+            ".terraform/**/*",
             "**/.terraform/**/*"
         ]
     },
-    "peacock.affectAccentBorders": false,
-    "peacock.affectActivityBar": true,
-    "peacock.affectTabActiveBorder": false,
-    "peacock.affectTitleBar": false,
-    "peacock.favoriteColors": [
-        {
-            "name": "Angular Red",
-            "value": "#b52e31"
-        },
-        {
-            "name": "Auth0 Orange",
-            "value": "#eb5424"
-        },
-        {
-            "name": "Azure Blue",
-            "value": "#007fff"
-        },
-        {
-            "name": "C# Purple",
-            "value": "#68217A"
-        },
-        {
-            "name": "Terraform Purple",
-            "value": "#639"
-        },
-        {
-            "name": "Go Cyan",
-            "value": "#5dc9e2"
-        },
-        {
-            "name": "JavaScript Yellow",
-            "value": "#f9e64f"
-        },
-        {
-            "name": "Mandalorian Blue",
-            "value": "#1857a4"
-        },
-        {
-            "name": "Node Green",
-            "value": "#215732"
-        },
-        {
-            "name": "Something Different",
-            "value": "#832561"
-        },
-    ],
+    "zenMode.hideLineNumbers": false,
+    "window.title": "${rootName} 🔥 ${activeEditorShort}${dirty}",
+    "workbench.settings.useSplitJSON": true,
+    "workbench.settings.editor": "json",
+    "git.autofetch": true,
+    "terraform.telemetry.enabled": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "markdown.extension.tableFormatter.enabled": false,
+    "explorer.compactFolders": false,
+    "workbench.commandPalette.history": 10,
+    "workbench.editor.highlightModifiedTabs": false,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.fontAliasing": "default",
+    "extensions.ignoreRecommendations": true,
+    "extensions.showRecommendationsOnlyOnDemand": true,
+    "vsonline.accountProvider": "Microsoft",
+    "githubPullRequests.showInSCM": false,
+    "dotfiles.repository": "https://github.com/ThorstenHans/dotfiles.git",
 }

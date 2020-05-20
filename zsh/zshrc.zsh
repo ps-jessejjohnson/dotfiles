@@ -9,7 +9,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/gems/bin:$GOPATH/
 export TERM="xterm-256color"
 # load oh-my-zsh
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="cloud"
 
 ## ALIASSES
 
@@ -81,6 +81,7 @@ source $ZSH/lib/key-bindings.zsh
 source $ZSH/plugins/kubectl
 source $ZSH/plugins/minikube
 source $ZSH/plugins/docker
+source $ZSH/plugins/helm
 source $ZSH/plugins/terraform
 source $ZSH/lib/history.zsh
 source $ZSH/lib/completion.zsh

@@ -8,6 +8,7 @@ echo ""
 default_gitusername="Thorsten Hans"
 default_gitemail="thorsten.hans@gmail.com"
 default_codeexec="code"
+default_configure_iterm="y"
 default_install_code_extensions="n"
 # END VARIABLES
 
@@ -64,6 +65,24 @@ ln -sfv "${working_dir}/editorconfig" "${HOME}/.editorconfig" > /dev/null
 echo -e "\033[92mLined: npmrc, angular stuff and editorconfig\033[0m"
 echo ""
 
+# iTerm
+echo -e '\033[35mConfiguring iTerm2\033[0m'
+if [[ ${silent_mode} == 0 ]]
+then
+    echo 'Do you want to configure iTerm2?'
+    read -p '[y]es or [n]o: ' configure_iterm
+else
+    configure_iterm=${default_configure_iterm}
+fi
+
+if [[ ${configure_iterm} == 'y' ]]
+then
+    defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "${working_dir}/iterm"
+    defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+    echo -e "\033[92miTerm2 configured\033[0m"
+fi
+echo ""
+
 # vscode
 echo -e '\033[35mLinking VSCode / VSCode Insiders stuff\033[0m'
 echo ''
@@ -76,7 +95,7 @@ else
     codeexec=${default_codeexec}
 fi
 
-codefolder_location="${HOME}/.config"
+codefolder_location="${HOME}/Library/Application Support"
 codefolder_name=""
 
 if [[ ${codeexec} == 'code' ]]
@@ -86,8 +105,8 @@ else
     codeexec="code-insiders"
     codefolder_name="Code - Insiders"
 fi
-mkdir -p "${codefolder_location}/${codefolder_name}"
 
+mkdir -p "${codefolder_location}/${codefolder_name}"
 userfolder="${codefolder_location}/${codefolder_name}/User"
 
 if [[ -d "${userfolder}" ]]
@@ -97,8 +116,8 @@ then
     rm -rf "${userfolder}"
 fi
 cd "${codefolder_location}/${codefolder_name}"
-ln -sfv "${"${HOME}/.config"}/vscode/User" User > /dev/null
-cd "${"${HOME}/.config"}"
+ln -sfv "${working_dir}/vscode/User" User > /dev/null
+cd "${working_dir}"
 
 if [[ ${silent_mode} == 0 ]]
 then

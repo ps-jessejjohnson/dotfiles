@@ -19,7 +19,7 @@ This repository contains my dotfiles for
   - with custom profiles for regular usage and presentations
 - Visual Studio Code
   - supports both Visual Studio Code and Visual Studio Code Insiders
-  - Installs a set of extensions I use (see [.extensions](./vscode/.extensions))
+  - Installs a set of extensions I use the following ones: see [.extensions](./vscode/.extensions)
 
 ## Font
 
@@ -27,16 +27,20 @@ I use [Dank Mono](https://dank.sh/) for both, Terminal and VSCode. On top I've p
 
 ## Requirements
 
-If you're running macOS, you should checkout my [macOS setup repo](https://github.com/ThorstenHans/msetup). However, this script works for both macOS and linux.
+If you're running macOS, you should checkout my [macOS setup repo](https://github.com/ThorstenHans/msetup). However, this repository contains dedicated install scripts for *macOS* and *Linux*.
 
 - git
 - zsh and oh-my-zsh
 - Visual Studio Code (to install extensions automatically)
 - iTerm2 (only if running on macOS and iTerm2 configuration requested during script execution)
 
-## Usage
+## Linux Usage
 
 The [install script](./install.sh) can be executed without user interaction by providing the `--silent` flag. However, you may want to specify default values for variables used within the script. Check the variables section in the install script. If started without `--silent` the script will prompt for several configurable actions during script execution.
+
+## macOS Usage
+
+The [install script](./mac_install.sh) can be executed without user interaction by providing the `--silent` flag. However, you may want to specify default values for variables used within the script. Check the variables section in the install script. If started without `--silent` the script will prompt for several configurable actions during script execution.
 
 ### Interactive execution
 
