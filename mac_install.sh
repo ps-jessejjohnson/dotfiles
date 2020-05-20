@@ -12,11 +12,11 @@ default_configure_iterm="y"
 default_install_code_extensions="n"
 # END VARIABLES
 
-silent_mode=0
-if [[ "$1" == "--silent" ]]
+silent_mode=1
+if [[ "$1" == "--interactive" ]]
 then
-  echo -e "\033[36mRunning in silent mode due to --silent.\033[0m"
-  silent_mode=1
+  echo -e "\033[36mRunning in interactive mode due to --interactive.\033[0m"
+  silent_mode=0
 fi
 
 working_dir=$(pwd)
