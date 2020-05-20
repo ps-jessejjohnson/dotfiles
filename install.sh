@@ -11,6 +11,9 @@ default_codeexec="code"
 default_install_code_extensions="n"
 # END VARIABLES
 
+# install oh-my-zsh
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+
 silent_mode=1
 if [[ "$1" == "--interactive" ]]
 then
